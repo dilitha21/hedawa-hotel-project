@@ -1,0 +1,56 @@
+/* Admin Dashboard specific styles */
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.admin-sidebar h2 {
+    text-align: center;
+    color: #ff6b6b;
+    margin-bottom: 2rem;
+}
+
+.admin-sidebar a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #c2c7d0;
+    text-decoration: none;
+}
+
+.admin-sidebar a:hover, .admin-sidebar a.active {
+    background-color: #494e53;
+    color: #fff;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+}
+
+table th {
+    background-color: #e9ecef;
+}
