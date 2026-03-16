@@ -10,8 +10,8 @@
             <div class="footer-contact">
                 <h3>Contact Information</h3>
                 <ul class="contact-list">
-                    <li><i class="fa-solid fa-location-dot"></i> 123 Culinary Green Way, Foodville</li>
-                    <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Humbutiyaawa Rd, Veyangoda</li>
+                    <li><i class="fa-solid fa-phone"></i> 077 763 8980</li>
                     <li><i class="fa-solid fa-envelope"></i> hello@hedawa.com</li>
                 </ul>
             </div>
@@ -19,10 +19,10 @@
             <div class="footer-social">
                 <h3>Follow Us</h3>
                 <div class="social-icons">
-                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com/HEDEWARESORT" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" aria-label="TripAdvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+                    <a href="https://www.tiktok.com/@hedewa.resort" aria-label="TikTok" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>

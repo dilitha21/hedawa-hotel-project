@@ -100,7 +100,7 @@ a:hover {
 
 /* --- Navbar / Header --- */
 .header {
-    background-color: var(--white);
+    background-color: var(--primary-light);
     box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
@@ -117,14 +117,14 @@ a:hover {
 .logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .logo-icon {
-    color: var(--accent);
+    color: var(--white);
 }
 
 .nav-links {
@@ -135,18 +135,19 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--text-main);
+    color: var(--white);
     font-weight: 500;
     transition: var(--transition);
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--primary);
+    color: var(--primary-dark);
 }
 
 .nav-links .btn {
-    color: var(--white);
+    color: var(--primary);
+    background-color: var(--white);
 }
 
 .nav-links .btn:hover {
@@ -158,7 +159,7 @@ a:hover {
     background: none;
     border: none;
     font-size: 1.5rem;
-    color: var(--primary);
+    color: var(--white);
     cursor: pointer;
 }
 
