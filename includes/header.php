@@ -47,7 +47,7 @@ $base_url = (strpos($_SERVER['SCRIPT_NAME'], '/pages/') !== false || strpos($_SE
                     <?php else: ?>
                         <li><a href="<?= $base_url ?>profile.php">Profile</a></li>
                     <?php endif; ?>
-                    <li><a href="<?= $base_url ?>actions/logout_process.php" class="btn" style="background-color: #9C2007; color: white;">Logout</a></li>
+                    <li><a href="<?= $base_url ?>actions/logout_process.php" class="btn" style="background-color: #C82909; color: white;">Logout</a></li>
                 <?php else: ?>
                     <li><a href="<?= $base_url ?>login.php" class="btn">Login</a></li>
                 <?php endif; ?>
