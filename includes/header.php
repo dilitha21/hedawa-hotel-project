@@ -25,7 +25,7 @@ $base_url = (strpos($_SERVER['SCRIPT_NAME'], '/pages/') !== false || strpos($_SE
         <nav class="navbar container">
             <div class="logo">
                 <a href="<?= $base_url ?>index.php">
-                    <i class="fa-solid fa-leaf logo-icon"></i> Hedawa
+                    <i class="fa-solid fa-leaf logo-icon"></i>හේඩෑව
                 </a>
             </div>
             

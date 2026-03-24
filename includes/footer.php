@@ -3,16 +3,16 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-about">
-                <h3><i class="fa-solid fa-leaf"></i> Hedawa Restaurant</h3>
+                <h3><i class="fa-solid fa-leaf"></i>හේඩෑව</h3>
                 <p>Authentic dining experience bringing you the freshest ingredients and finest culinary traditions in a relaxing, green environment.</p>
             </div>
             
             <div class="footer-contact">
                 <h3>Contact Information</h3>
                 <ul class="contact-list">
-                    <li><i class="fa-solid fa-location-dot"></i> Humbutiyaawa Rd, Veyangoda</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 45/B, Humbutiyaawa Rd, Veyangoda</li>
                     <li><i class="fa-solid fa-phone"></i> 077 763 8980</li>
-                    <li><i class="fa-solid fa-envelope"></i> hello@hedawa.com</li>
+                    <li><i class="fa-solid fa-envelope"></i>hedawa@gmail.com</li>
                 </ul>
             </div>
             
