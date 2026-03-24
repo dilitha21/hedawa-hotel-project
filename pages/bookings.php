@@ -4,7 +4,7 @@ require_once '../includes/auth_check.php';
 require_once '../includes/header.php';
 
 $user_id = $_SESSION['user_id'];
-$rooms = $pdo->query("SELECT * FROM rooms WHERE is_available = 1")->fetchAll();
+$rooms = $pdo->query("SELECT * FROM rooms WHERE name NOT IN ('Dining Table', 'Reception Hall') AND is_available = 1")->fetchAll();
 ?>
 <style>
     .room-card input[type="radio"]:checked + .card-content {

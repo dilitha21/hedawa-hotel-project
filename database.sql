@@ -86,7 +86,9 @@ CREATE TABLE contacts (
 INSERT INTO rooms (name, description, price, capacity) VALUES 
 ('Single', 'Cozy single room for solo travelers.', 50.00, 1),
 ('Double', 'Comfortable double room perfect for couples.', 85.00, 2),
-('Suite', 'Luxury suite with premium amenities and extra space.', 150.00, 4);
+('Suite', 'Luxury suite with premium amenities and extra space.', 150.00, 4),
+('Dining Table', 'Reserve a table for a magnificent dining experience.', 10.00, 4),
+('Reception Hall', 'A grand reception hall for weddings and large gatherings.', 500.00, 100);
 
 -- Seed Food
 INSERT INTO food (name, description, price, category) VALUES 

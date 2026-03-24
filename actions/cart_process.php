@@ -36,6 +36,35 @@ if($action === 'remove' && $item_id) {
 
 if($action === 'clear') {
     $_SESSION['cart'] = [];
+    $_SESSION['reservation_cart'] = [];
+    header('Location: ../cart.php');
+    exit;
+}
+
+if($action === 'add_reservation') {
+    if(!isset($_SESSION['reservation_cart'])) {
+        $_SESSION['reservation_cart'] = [];
+    }
+    
+    $room_id = $_POST['room_id'] ?? 0;
+    if($room_id) {
+        $res_id = uniqid('res_');
+        $_SESSION['reservation_cart'][$res_id] = [
+            'room_id' => $room_id,
+            'date' => $_POST['booking_date'],
+            'time' => $_POST['booking_time'],
+            'guests' => $_POST['guests']
+        ];
+    }
+    header('Location: ../cart.php?success=reservation_added');
+    exit;
+}
+
+if($action === 'remove_reservation') {
+    $res_id = $_POST['res_id'] ?? '';
+    if(isset($_SESSION['reservation_cart'][$res_id])) {
+        unset($_SESSION['reservation_cart'][$res_id]);
+    }
     header('Location: ../cart.php');
     exit;
 }

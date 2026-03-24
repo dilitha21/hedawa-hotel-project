@@ -35,10 +35,11 @@ $base_url = (strpos($_SERVER['SCRIPT_NAME'], '/pages/') !== false || strpos($_SE
 
             <ul class="nav-links">
                 <li><a href="<?= $base_url ?>index.php">Home</a></li>
-                <li><a href="<?= $base_url ?>pages/bookings.php">Bookings</a></li>
-                <li><a href="<?= $base_url ?>pages/orders.php">Order</a></li>
+                <li><a href="<?= $base_url ?>pages/bookings.php">Rooms</a></li>
+                <li><a href="<?= $base_url ?>pages/reservation.php">Reservation</a></li>
+                <li><a href="<?= $base_url ?>pages/orders.php">Food</a></li>
                 <li><a href="<?= $base_url ?>pages/contact.php">Contact</a></li>
-                <li><a href="<?= $base_url ?>pages/cart.php" class="cart-link"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="<?= $base_url ?>cart.php" class="cart-link"><i class="fa-solid fa-shopping-cart"></i> Cart</a></li>
                 
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'staff'): ?>
@@ -46,7 +47,7 @@ $base_url = (strpos($_SERVER['SCRIPT_NAME'], '/pages/') !== false || strpos($_SE
                     <?php else: ?>
                         <li><a href="<?= $base_url ?>profile.php">Profile</a></li>
                     <?php endif; ?>
-                    <li><a href="<?= $base_url ?>actions/logout_process.php" class="btn btn-outline">Logout</a></li>
+                    <li><a href="<?= $base_url ?>actions/logout_process.php" class="btn" style="background-color: #9C2007; color: white;">Logout</a></li>
                 <?php else: ?>
                     <li><a href="<?= $base_url ?>login.php" class="btn">Login</a></li>
                 <?php endif; ?>
