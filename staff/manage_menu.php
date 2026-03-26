@@ -22,7 +22,7 @@ $menu_items = $pdo->query("SELECT * FROM food ORDER BY category ASC, name ASC")-
     <!-- Content -->
     <div style="flex: 1; padding: 3rem; overflow-x: auto;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-            <h2 style="margin: 0;"><i class="fa-solid fa-utensils" style="color:var(--accent);"></i> Manage Menu Structure</h2>
+            <h2 style="margin: 0;"><i class="fa-solid fa-utensils" style="color:var(--primary);"></i> Manage Menu Structure</h2>
             <button class="btn" onclick="document.getElementById('addModal').style.display='flex'"><i class="fa-solid fa-plus"></i> Add New Food</button>
         </div>
         

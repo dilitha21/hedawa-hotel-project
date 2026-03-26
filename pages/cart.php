@@ -77,7 +77,7 @@ $pending_orders = $stmtOrders->fetchAll();
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
         
         <!-- Active Pending Bookings -->
-        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-top: 4px solid var(--accent);">
+        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-top: 4px solid var(--primary-light);">
             <h3 style="display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-bed" style="color:var(--primary);"></i> Pending Bookings</h3>
             <?php if(empty($pending_bookings)): ?>
                 <p style="color: var(--text-muted); margin-top: 1rem;">No awaiting bookings.</p>
@@ -105,7 +105,7 @@ $pending_orders = $stmtOrders->fetchAll();
         </div>
 
         <!-- Active Pending Orders -->
-        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-top: 4px solid var(--accent);">
+        <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-top: 4px solid var(--primary-light);">
             <h3 style="display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-utensils" style="color:var(--primary);"></i> Pending Kitchen Orders</h3>
             <?php if(empty($pending_orders)): ?>
                 <p style="color: var(--text-muted); margin-top: 1rem;">No processed orders waiting.</p>

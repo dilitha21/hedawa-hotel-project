@@ -21,7 +21,7 @@ $orders = $pdo->query("SELECT o.*, u.full_name, u.email FROM orders o JOIN users
 
     <!-- Content -->
     <div style="flex: 1; padding: 3rem; overflow-x: auto;">
-        <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-receipt" style="color:var(--accent);"></i> All Orders</h2>
+        <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-receipt" style="color:var(--primary);"></i> All Orders</h2>
         
         <?php if(isset($_GET['msg']) && $_GET['msg'] === 'deleted'): ?>
             <div style="background: var(--bg-color); border-left: 4px solid var(--primary); padding: 1rem; margin-bottom: 2rem;">

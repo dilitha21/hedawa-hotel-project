@@ -2,7 +2,7 @@
 <div class="contact-container" style="max-width: 600px; margin: 2rem auto; background: var(--white); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
     
     <div style="text-align: center; margin-bottom: 2rem;">
-        <i class="fa-solid fa-envelope-open-text" style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;"></i>
+        <i class="fa-solid fa-envelope-open-text" style="font-size: 3rem; color: var(--primary); margin-bottom: 1rem;"></i>
         <h2>Get in Touch</h2>
         <p style="color: var(--text-muted);">Have questions or feedback? Drop us a message below and we will get back to you.</p>
     </div>

@@ -21,7 +21,7 @@ $bookings = $pdo->query("SELECT b.*, r.name as room_name, u.full_name, u.email F
 
     <!-- Content -->
     <div style="flex: 1; padding: 3rem; overflow-x: auto;">
-        <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-book-open" style="color:var(--accent);"></i> All Bookings</h2>
+        <h2 style="margin-bottom: 2rem;"><i class="fa-solid fa-book-open" style="color:var(--primary);"></i> All Bookings</h2>
         
         <?php if(isset($_GET['msg']) && $_GET['msg'] === 'deleted'): ?>
             <div style="background: var(--bg-color); border-left: 4px solid var(--primary); padding: 1rem; margin-bottom: 2rem;">

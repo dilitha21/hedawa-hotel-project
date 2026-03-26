@@ -23,7 +23,7 @@ $total_staff = $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'staff'")->f
 
     <!-- Content -->
     <div style="flex: 1; padding: 3rem;">
-        <h2 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-gauge-high" style="color:var(--accent);"></i> Overview</h2>
+        <h2 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 0.5rem;"><i class="fa-solid fa-gauge-high" style="color:var(--primary);"></i> Overview</h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
             <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary);">
@@ -31,7 +31,7 @@ $total_staff = $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'staff'")->f
                 <p style="font-size: 2.5rem; font-weight: 700; color: var(--text-main); margin-top: 0.5rem;"><?= $pending_orders ?></p>
             </div>
             
-            <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent);">
+            <div style="background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); border-left: 4px solid var(--primary-light);">
                 <h3 style="color: var(--text-muted); font-size: 1.1rem;">Pending Bookings</h3>
                 <p style="font-size: 2.5rem; font-weight: 700; color: var(--text-main); margin-top: 0.5rem;"><?= $pending_bookings ?></p>
             </div>
