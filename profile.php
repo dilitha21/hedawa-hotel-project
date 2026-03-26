@@ -40,7 +40,7 @@ $bookings = $stmt->fetchAll();
         <tr>
             <td>#<?= $order['id'] ?></td>
             <td><?= $order['created_at'] ?></td>
-            <td>$<?= number_format($order['total_amount'], 2) ?></td>
+            <td>Rs. <?= number_format($order['total_amount'], 2) ?></td>
             <td><?= ucfirst($order['status']) ?></td>
         </tr>
         <?php endforeach; ?>

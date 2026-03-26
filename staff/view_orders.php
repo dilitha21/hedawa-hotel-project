@@ -13,6 +13,7 @@ $orders = $pdo->query("SELECT o.*, u.full_name, u.email FROM orders o JOIN users
         <ul style="list-style: none;">
             <li><a href="dashboard.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
             <li><a href="view_orders.php" style="display: block; padding: 1rem 2rem; color: var(--primary); font-weight: 500; background: var(--bg-color); border-right: 4px solid var(--primary);"><i class="fa-solid fa-receipt"></i> View Orders</a></li>
+            <li><a href="manage_menu.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-utensils"></i> Manage Menu</a></li>
             <li><a href="view_bookings.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-book-open"></i> View Bookings</a></li>
             <li><a href="register_staff.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-user-plus"></i> Register Staff</a></li>
         </ul>
@@ -41,7 +42,7 @@ $orders = $pdo->query("SELECT o.*, u.full_name, u.email FROM orders o JOIN users
             <tr style="border-bottom: 1px solid #edf2f7;">
                 <td style="padding: 1rem; font-weight: 500;">#<?= $o['id'] ?></td>
                 <td style="padding: 1rem;"><?= htmlspecialchars($o['full_name']) ?><br><small style="color: var(--text-muted);"><?= htmlspecialchars($o['email']) ?></small></td>
-                <td style="padding: 1rem; font-weight: 600;">$<?= number_format($o['total_amount'], 2) ?></td>
+                <td style="padding: 1rem; font-weight: 600;">Rs. <?= number_format($o['total_amount'], 2) ?></td>
                 <td style="padding: 1rem;">
                     <span style="background: <?= $o['status'] == 'completed' ? 'var(--accent)' : '#edf2f7' ?>; color: var(--text-main); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.9rem;">
                         <?= ucfirst(htmlspecialchars($o['status'])) ?>

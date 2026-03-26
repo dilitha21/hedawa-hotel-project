@@ -84,19 +84,19 @@ CREATE TABLE contacts (
 
 -- Seed Rooms
 INSERT INTO rooms (name, description, price, capacity) VALUES 
-('Single', 'Cozy single room for solo travelers.', 50.00, 1),
-('Double', 'Comfortable double room perfect for couples.', 85.00, 2),
-('Suite', 'Luxury suite with premium amenities and extra space.', 150.00, 4),
-('Dining Table', 'Reserve a table for a magnificent dining experience.', 10.00, 4),
-('Reception Hall', 'A grand reception hall for weddings and large gatherings.', 500.00, 100);
+('Single', 'Cozy single room for solo travelers.', 8000.00, 1),
+('Double', 'Comfortable double room perfect for couples.', 15000.00, 2),
+('Suite', 'Luxury suite with premium amenities and extra space.', 30000.00, 4),
+('Dining Table', 'Reserve a table for a magnificent dining experience.', 2000.00, 4),
+('Reception Hall', 'A grand reception hall for weddings and large gatherings.', 150000.00, 100);
 
 -- Seed Food
 INSERT INTO food (name, description, price, category) VALUES 
-('Rice and curry', 'Authentic traditional rice served with multiple curries.', 12.50, 'Mains'),
-('Grilled chicken', 'Perfectly grilled chicken breast with side vegetables.', 18.00, 'Mains'),
-('Salad', 'Fresh garden salad with vinaigrette dressing.', 8.00, 'Starters'),
-('Soup', 'Creamy seasonal vegetable soup.', 6.50, 'Starters'),
-('Dessert', 'House special chocolate lava cake.', 7.00, 'Desserts');
+('Rice and curry', 'Authentic traditional rice served with multiple curries.', 850.00, 'Mains'),
+('Grilled chicken', 'Perfectly grilled chicken breast with side vegetables.', 1500.00, 'Mains'),
+('Salad', 'Fresh garden salad with vinaigrette dressing.', 600.00, 'Starters'),
+('Soup', 'Creamy seasonal vegetable soup.', 500.00, 'Starters'),
+('Dessert', 'House special chocolate lava cake.', 750.00, 'Desserts');
 
 -- Dummy Admin User (Password: admin123)
 INSERT INTO users (full_name, email, password_hash, role) VALUES 

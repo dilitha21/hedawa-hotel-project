@@ -43,7 +43,7 @@ $pending_orders = $stmtOrders->fetchAll();
                 ?>
                 <tr style="border-bottom: 1px solid #edf2f7;">
                     <td style="padding: 1rem 0; font-weight: 500;"><?= htmlspecialchars($foodData['name']) ?></td>
-                    <td style="text-align: center; color: var(--text-muted);">$<?= number_format($foodData['price'], 2) ?></td>
+                    <td style="text-align: center; color: var(--text-muted);">Rs. <?= number_format($foodData['price'], 2) ?></td>
                     <td style="text-align: center; font-weight: 600;"><?= $qty ?></td>
                     <td style="text-align: right;">
                         <form action="../actions/cart_process.php" method="POST" style="margin: 0;">
@@ -56,7 +56,7 @@ $pending_orders = $stmtOrders->fetchAll();
                 <?php endforeach; ?>
                 <tr>
                     <td colspan="3" style="text-align: right; padding: 1rem 1rem 1rem 0; font-weight: 600; font-size: 1.1rem;">Estimated Total:</td>
-                    <td style="text-align: right; font-weight: 700; font-size: 1.2rem; color: var(--primary);">$<?= number_format($cart_total, 2) ?></td>
+                    <td style="text-align: right; font-weight: 700; font-size: 1.2rem; color: var(--primary);">Rs. <?= number_format($cart_total, 2) ?></td>
                 </tr>
             </table>
 

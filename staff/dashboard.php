@@ -15,6 +15,7 @@ $total_staff = $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'staff'")->f
         <ul style="list-style: none;">
             <li><a href="dashboard.php" style="display: block; padding: 1rem 2rem; color: var(--primary); font-weight: 500; background: var(--bg-color); border-right: 4px solid var(--primary);"><i class="fa-solid fa-chart-pie"></i> Dashboard</a></li>
             <li><a href="view_orders.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-receipt"></i> View Orders</a></li>
+            <li><a href="manage_menu.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-utensils"></i> Manage Menu</a></li>
             <li><a href="view_bookings.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-book-open"></i> View Bookings</a></li>
             <li><a href="register_staff.php" style="display: block; padding: 1rem 2rem; color: var(--text-main); font-weight: 500;"><i class="fa-solid fa-user-plus"></i> Register Staff</a></li>
         </ul>

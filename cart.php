@@ -44,8 +44,8 @@ $cart_total = 0;
             <tr>
                 <td><?= htmlspecialchars($item['name']) ?></td>
                 <td><?= $quantity ?></td>
-                <td>$<?= number_format($item['price'], 2) ?></td>
-                <td>$<?= number_format($subtotal, 2) ?></td>
+                <td>Rs. <?= number_format($item['price'], 2) ?></td>
+                <td>Rs. <?= number_format($subtotal, 2) ?></td>
                 <td>
                     <form action="actions/cart_process.php" method="POST" style="display:inline; padding:0; box-shadow:none; margin:0;">
                         <input type="hidden" name="action" value="remove">
@@ -87,7 +87,7 @@ $cart_total = 0;
                 <td><strong><?= htmlspecialchars($room['name']) ?></strong></td>
                 <td><?= htmlspecialchars($res['date']) ?> at <?= htmlspecialchars($res['time']) ?></td>
                 <td><?= htmlspecialchars($res['guests']) ?> people</td>
-                <td>$<?= number_format($room['price'], 2) ?></td>
+                <td>Rs. <?= number_format($room['price'], 2) ?></td>
                 <td>
                     <form action="actions/cart_process.php" method="POST" style="display:inline; padding:0; box-shadow:none; margin:0;">
                         <input type="hidden" name="action" value="remove_reservation">
@@ -105,7 +105,7 @@ $cart_total = 0;
     <?php endif; ?>
 
     <div style="background: var(--white); padding: 1.5rem; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: flex; justify-content: space-between; align-items: center; margin-top: 2rem;">
-        <h3 style="margin: 0; color: var(--primary-dark);">Total: $<?= number_format($cart_total, 2) ?></h3>
+        <h3 style="margin: 0; color: var(--primary-dark);">Total: Rs. <?= number_format($cart_total, 2) ?></h3>
         <a href="checkout.php" class="btn">Proceed to Checkout</a>
     </div>
 <?php endif; ?>
