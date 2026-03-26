@@ -19,17 +19,3 @@ The Hedawa Restaurant System is a responsive web application designed for a luxu
 4. Access the site at `http://localhost/hedawa-restaurant/`.
 
 ---
-
-### Login Credentials
-The system comes with the following pre-seeded user accounts:
-
-### Staff Account (Admin Dashboard Access)
-- **Role:** Administrator (Staff)
-- **Email:** `admin@hedawa.com`
-- **Password:** `admin123`
-
-*(You can use this account to log in and register additional staff users through the Dashboard -> Register Staff page).*
-
-### Customer Account
-You can register a new customer account directly from the frontend interface clicking "Register", or use this interface to test public flows.
-
